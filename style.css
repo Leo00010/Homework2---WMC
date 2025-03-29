@@ -1,1 +1,4 @@
-
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("your-font.ttf") format("truetype");
+}
