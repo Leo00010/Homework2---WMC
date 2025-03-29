@@ -13,3 +13,24 @@ body {
 h1, h2, p {
   color: #ffffff; /* Branco */
 }
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center; /* Centraliza a legenda */
+}
+
+.image-container figure {
+  width: 45%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container figcaption {
+  font-size: 14px;
+  color: #ffffff; /* Mantém o texto branco */
+  margin-top: 5px;
+}
