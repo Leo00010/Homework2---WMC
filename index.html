@@ -55,20 +55,19 @@
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
     }
 
-    /* Ajuste para o logo ficar abaixo da imagem principal */
-    .image-container .logo-container {
-      display: flex;
-      flex-direction: column; /* Makes the logo image appear below the photo */
-      justify-content: center;
-      align-items: center;
-      width: 100%; /* Ensures it takes the full width of the container */
-    }
-
     figcaption {
       margin-top: 5px;
       font-size: 14px;
       font-style: italic;
       color: #ffffff; /* Branco */
+    }
+
+    /* Alinha a imagem "logo_tuma.jpg" na linha de baixo */
+    .image-container .logo-container {
+      display: block; /* Forces the logo image to move to the next line */
+      margin-top: 20px; /* Adds spacing above the logo */
+      width: 100%; /* Ensures it takes full width */
+      text-align: center;
     }
 
     /* Estilo do áudio e vídeo */
@@ -93,24 +92,19 @@
         <figcaption>Me doing a solo</figcaption>
       </figure>
       
-      <div class="logo-container">
-        <figure>
-          <img src="logo_tuma.jpg" alt="Logo from the musical group of my university">
-          <figcaption>Logo from the musical group of my university</figcaption>
-        </figure>
-      </div>
+      <figure class="logo-container">
+        <img src="logo_tuma.jpg" alt="Logo from the musical group of my university">
+        <figcaption>Logo from the musical group of my University</figcaption>
+      </figure>
     </div>
-
-    <p>Image format: JPG (JPEG), 1125x1395, 77.6 KB.</p>
 
     <!-- Sound Section -->
     <h2>Sound</h2>
     <audio controls>
       <source src="TUMa -Eterno Amor CD.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
     </audio>
     <p>This is one of our originals</p>
-    <p>Audio format: MP3, commonly used for streaming. It is compressed, so it's ideal for quick loading times while maintaining decent quality.</p>
+    <p>Audio format: MP3, commonly used for streaming.</p>
 
     <!-- GIF Section -->
     <h2>GIF Animation</h2>
