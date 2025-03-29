@@ -2,35 +2,47 @@
   font-family: "MyCustomFont";
   src: url("myfonts.ttf") format("truetype");
 }
+
 body {
   font-family: 'MyCustomFont', sans-serif;
-  background-color: #800000; /* Bordô */
+  background-color: #800000; /* Bordeaux */
   color: #ffffff; /* Branco */
   margin: 0;
   padding: 0;
+  text-align: center; /* Centraliza o conteúdo */
 }
 
-h1, h2, p {
+/* Estiliza os títulos */
+h1, h2, p, figcaption {
   color: #ffffff; /* Branco */
 }
+
+/* Ajusta a seção de fotos */
 .image-container {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  text-align: center; /* Centraliza a legenda */
+  justify-content: center;
+  gap: 40px; /* Aumenta espaçamento entre imagens */
+  flex-wrap: wrap; /* Permite ajuste responsivo */
 }
 
 .image-container figure {
-  width: 45%;
+  width: 30%; /* Mantém as imagens proporcionais */
+  text-align: center;
 }
 
 .image-container img {
   width: 100%;
   height: auto;
+  border-radius: 10px; /* Bordas arredondadas para estética */
 }
 
-.image-container figcaption {
+figcaption {
   font-size: 14px;
-  color: #ffffff; /* Mantém o texto branco */
   margin-top: 5px;
+}
+
+/* Ajusta o áudio */
+audio {
+  width: 80%;
+  margin-top: 10px;
 }
