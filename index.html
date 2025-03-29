@@ -35,21 +35,21 @@
     /* Ajuste de imagens lado a lado */
     .image-container {
       display: flex;
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-between; /* Space between for equal spacing */
       flex-wrap: wrap;
       margin-top: 20px;
     }
 
     .image-container figure {
-      flex: 1 1 calc(50% - 20px); /* Each image takes up 50% of the container minus the gap */
+      flex: 1 1 48%; /* Each image takes about 48% of the container width */
+      margin: 0 10px; /* Added margin to create space between images */
       text-align: center;
     }
 
     .image-container img {
-      width: 100%; /* Make the image take full width of the figure container */
+      width: 100%; /* Makes the image take full width of the figure */
       height: auto;
-      border-radius: 10px; /* Cantos arredondados para um visual melhor */
+      border-radius: 10px; /* Rounded corners for better appearance */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     }
 
