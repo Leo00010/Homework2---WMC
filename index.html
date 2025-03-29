@@ -14,22 +14,48 @@
 
     /* Estilização Geral */
     body {
-      font-family: 'MyCustomFont', sans-serif;
-      background-color: #800000; /* Bordô */
-      color: #ffffff; /* Branco */
+      font-family: 'Roboto', sans-serif; /* Fontes mais modernas */
+      background-color: #f0f0f0; /* Cor de fundo suave */
+      color: #333; /* Texto em cinza escuro para melhor contraste */
       margin: 0;
       padding: 0;
       text-align: center;
     }
 
     h1, h2, p {
-      color: #ffffff; /* Branco */
+      color: #333; /* Cor mais suave para o texto */
     }
 
+    /* Container principal */
     .content {
       width: 80%;
       margin: 0 auto;
-      padding: 20px;
+      padding: 30px;
+      background-color: #ffffff; /* Fundo branco para conteúdo */
+      border-radius: 10px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar o conteúdo */
+    }
+
+    /* Título principal */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    /* Títulos secundários */
+    h2 {
+      font-size: 1.8em;
+      margin-top: 20px;
+      border-bottom: 2px solid #333; /* Linha abaixo dos títulos */
+      padding-bottom: 5px;
+    }
+
+    /* Parágrafo de introdução */
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
     }
 
     /* Ajuste de imagens lado a lado */
@@ -42,24 +68,27 @@
     }
 
     .image-container figure {
-      width: 45%; /* Definir a largura das imagens */
+      width: 45%; /* Largura das imagens */
       margin: 0;
       text-align: center;
+      border-radius: 10px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
+      background-color: #ffffff; /* Fundo branco para o figure */
+      padding: 10px;
     }
 
     .image-container img {
       width: 100%; /* As imagens irão ocupar toda a largura do figure */
-      height: 100%; /* Mantém a proporção da imagem sem deformar */
-      object-fit: contain; /* Ajusta a imagem dentro da caixa sem cortá-la */
+      height: auto; /* Mantém a proporção da imagem */
       border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     figcaption {
-      margin-top: 5px;
-      font-size: 14px;
+      margin-top: 10px;
+      font-size: 1em;
       font-style: italic;
-      color: #ffffff;
+      color: #666; /* Cor mais suave para as legendas */
     }
 
     /* Responsividade para quando a tela for mais estreita */
@@ -72,6 +101,26 @@
       .image-container figure {
         width: 80%; /* Largura das figuras se a tela for pequena */
       }
+    }
+
+    /* Áudio e vídeo */
+    audio, iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    /* Estilo de figuras */
+    figure {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    /* Estilo do GIF */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
 
   </style>
@@ -106,8 +155,8 @@
     <p>Audio format: MP3, commonly used for streaming.</p>
 
     <!-- GIF Section -->
+    <h2>GIF Animation</h2>
     <figure>
-      <h2>GIF Animation</h2>
       <img src="gif.gif" alt="This is me training my moves :)">
       <figcaption>This is me training my moves :)</figcaption>
     </figure>
