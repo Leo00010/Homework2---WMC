@@ -2,3 +2,14 @@
   font-family: "MyCustomFont";
   src: url("myfonts.ttf") format("truetype");
 }
+body {
+  font-family: 'MyCustomFont', sans-serif;
+  background-color: #800000; /* Bordô */
+  color: #ffffff; /* Branco */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p {
+  color: #ffffff; /* Branco */
+}
