@@ -18,27 +18,34 @@ h1, h2, p, figcaption {
 }
 
 /* Ajusta a seção de fotos */
+/* Ajusta a seção de fotos */
 .image-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Aumenta espaçamento entre imagens */
-  flex-wrap: wrap; /* Permite ajuste responsivo */
+  gap: 40px; /* Espaçamento entre imagens */
+  flex-wrap: wrap; /* Responsivo */
 }
 
 .image-container figure {
-  width: 30%; /* Mantém as imagens proporcionais */
+  width: 30%; /* Mantém proporção */
   text-align: center;
+  background-color: #000000; /* Fundo preto */
+  padding: 15px; /* Adiciona espaço interno */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
 .image-container img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Bordas arredondadas para estética */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
 figcaption {
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 16px; /* Aumenta tamanho da legenda */
+  font-weight: bold; /* Deixa a legenda mais destacada */
+  color: #ffffff; /* Texto branco */
+  text-align: center; /* Centraliza melhor */
+  margin-top: 10px; /* Dá mais espaço entre a imagem e o texto */
 }
 
 /* Ajusta o áudio */
