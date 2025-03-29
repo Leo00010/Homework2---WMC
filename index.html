@@ -35,15 +35,15 @@
     /* Ajuste de imagens lado a lado */
     .image-container {
       display: flex;
-      justify-content: space-between; /* Space between for equal spacing */
-      flex-wrap: wrap;
+      justify-content: space-between; /* Ensures equal spacing */
+      flex-wrap: wrap; /* Allows wrapping on smaller screens */
       margin-top: 20px;
     }
 
     .image-container figure {
-      flex: 1 1 48%; /* Each image takes about 48% of the container width */
-      margin: 0 10px; /* Added margin to create space between images */
+      flex: 1 1 45%; /* Each image takes up 45% of the container width */
       text-align: center;
+      margin: 10px;
     }
 
     .image-container img {
@@ -110,3 +110,4 @@
 
 </body>
 </html>
+
