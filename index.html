@@ -12,22 +12,20 @@
       src: url('myfonts.ttf') format('truetype');
     }
 
+    /* Estilização Geral */
     body {
       font-family: 'MyCustomFont', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #800000; /* Bordô */
+      color: #ffffff; /* Branco */
       margin: 0;
       padding: 0;
-    }
-    h1 {
-      font-family: 'MyCustomFont', serif;
-      color: #000;
       text-align: center;
     }
-    p {
-      font-family: 'MyCustomFont', sans-serif;
-      font-size: 16px;
+
+    h1, h2, p {
+      color: #ffffff; /* Branco */
     }
+
     .content {
       width: 80%;
       margin: 0 auto;
@@ -37,12 +35,33 @@
     /* Ajuste de imagens lado a lado */
     .image-container {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
+
+    .image-container figure {
+      text-align: center;
+    }
+
     .image-container img {
-      width: 45%;
+      width: 40%;
       height: auto;
+      border-radius: 10px; /* Cantos arredondados para um visual melhor */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    figcaption {
+      margin-top: 5px;
+      font-size: 14px;
+      font-style: italic;
+      color: #ffffff; /* Branco */
+    }
+
+    /* Estilo do áudio e vídeo */
+    audio, iframe {
+      display: block;
+      margin: 10px auto;
     }
 
   </style>
@@ -65,7 +84,7 @@
         <figcaption>Logo from the musical group of my university</figcaption>
       </figure>
     </div>
-    
+
     <p><strong>Image format:</strong> JPG (JPEG), 1125x1395, 77.6 KB.</p>
 
     <!-- Sound Section -->
@@ -89,4 +108,3 @@
 
 </body>
 </html>
-
