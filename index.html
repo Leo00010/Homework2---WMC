@@ -1,4 +1,3 @@
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,79 +5,123 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora&display=swap" rel="stylesheet">
   
   <style>
+    /* Fonte personalizada */
     @font-face {
       font-family: 'MyCustomFont';
       src: url('myfonts.ttf') format('truetype');
     }
 
+    /* Estilização Geral */
     body {
-      font-family: 'MyCustomFont', sans-serif;
-      background-color: #800000;
-      color: #ffffff;
+      font-family: 'MyCustomFont', sans-serif; /* Mantém a fonte personalizada */
+      background-color: #800000; /* Fundo bordô */
+      color: #ffffff; /* Texto preto */
       margin: 0;
       padding: 0;
       text-align: center;
     }
 
     h1, h2, p {
-      color: #ffffff;
+      color: #ffffff; /* Letras pretas */
     }
 
+    /* Container principal */
     .content {
       width: 80%;
       margin: 0 auto;
       padding: 30px;
-      background-color: #ffffff;
+      background-color: #ffffff; /* Fundo branco para conteúdo */
       border-radius: 10px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
     }
 
+    /* Título principal */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    /* Títulos secundários */
+    h2 {
+      font-size: 1.8em;
+      margin-top: 20px;
+      border-bottom: 2px solid #000000; /* Linha abaixo dos títulos */
+      padding-bottom: 5px;
+    }
+
+    /* Parágrafo de introdução */
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    /* Ajuste de imagens lado a lado */
     .image-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       gap: 20px;
-      flex-wrap: wrap;
+      margin-top: 20px;
+      flex-wrap: wrap; /* Para garantir que elas se ajustem em telas menores */
     }
 
     .image-container figure {
-      width: 45%;
+      width: 45%; /* Largura das imagens */
       margin: 0;
       text-align: center;
       border-radius: 10px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave nas imagens */
+      background-color: #ffffff; /* Fundo branco para o figure */
       padding: 10px;
     }
 
     .image-container img {
-      width: 100%;
-      height: auto;
+      width: 100%; /* As imagens irão ocupar toda a largura do figure */
+      height: auto; /* Mantém a proporção da imagem */
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    /* Move apenas a legenda da imagem "logo_tuma.jpg" para baixo */
-    .image-container figure:last-child figcaption {
-      margin-top: 30px;
-    }
-
     figcaption {
-      font-size: 16px;
-      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1em;
       font-style: italic;
-      color: #666;
+      color: #666; /* Cor mais suave para as legendas */
     }
 
+    /* Responsividade para quando a tela for mais estreita */
     @media (max-width: 768px) {
       .image-container {
-        flex-direction: column;
+        flex-direction: column; /* Alinha as imagens em coluna */
         align-items: center;
       }
 
       .image-container figure {
-        width: 80%;
+        width: 80%; /* Largura das figuras se a tela for pequena */
       }
     }
+
+    /* Áudio e vídeo */
+    audio, iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    /* Estilo de figuras */
+    figure {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    /* Estilo do GIF */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
   </style>
 </head>
 <body>
@@ -87,6 +130,7 @@
     <h1>Leandro Rodrigues</h1>
     <p>Welcome to my web page! Here I will show you a little about one of my hobbies!</p>
 
+    <!-- Image Section -->
     <h2>Photos</h2>
     <div class="image-container">
       <figure>
@@ -99,6 +143,27 @@
         <figcaption>Logo from the musical group of my university</figcaption>
       </figure>
     </div>
+
+    <!-- Sound Section -->
+    <h2>Sound</h2>
+    <audio controls>
+      <source src="TUMa -Eterno Amor CD.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <p>This is one of our originals</p>
+    <p>Audio format: MP3, commonly used for streaming.</p>
+
+    <!-- GIF Section -->
+    <h2>GIF Animation</h2>
+    <figure>
+      <img src="gif.gif" alt="This is me training my moves :)">
+      <figcaption>This is me training my moves :)</figcaption>
+    </figure>
+
+    <!-- Video Section -->
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7aQj_ecsWU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>This is a video from one of our performances.</p>
   </div>
 
 </body>
