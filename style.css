@@ -41,17 +41,20 @@ figcaption {
   font-size: 14px;
   margin-top: 5px;
 }
-.x3d-container {
+
+.homework-img {
   width: 100%;
-  aspect-ratio: 3 / 4; /* mesma proporção da imagem */
+  height: auto;
+  max-height: 400px; /* valor real da imagem (ajusta aqui se necessário) */
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.x3d-container x3d {
+.x3d-fixed {
   width: 100%;
-  height: 100%;
+  height: 400px; /* exata altura da imagem */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   display: block;
 }
 
