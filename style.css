@@ -48,55 +48,5 @@ audio {
   width: 80%;
   margin-top: 10px;
 }
-.side-by-side-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 30px;
-}
 
-.side-card {
-  width: 45%;
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
 
-.side-card h3 {
-  color: #000;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-}
-
-.side-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-/* Bloco para manter o mesmo tamanho da imagem */
-.x3d-wrapper {
-  width: 100%;
-  aspect-ratio: 3 / 4; /* proporção semelhante à da foto */
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.x3d-wrapper x3d {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.side-card figcaption {
-  margin-top: 10px;
-  font-style: italic;
-  color: #555;
-  font-size: 1em;
-}
