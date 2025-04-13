@@ -51,16 +51,17 @@ audio {
 .side-by-side-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 40px;
   margin-top: 30px;
 }
 
 .side-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 20px;
   width: 45%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -71,7 +72,6 @@ audio {
   font-size: 1.5em;
 }
 
-/* Imagem */
 .side-card img {
   width: 100%;
   height: auto;
@@ -79,12 +79,12 @@ audio {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Modelo 3D dentro de uma caixa proporcional */
+/* Bloco para manter o mesmo tamanho da imagem */
 .x3d-wrapper {
   width: 100%;
-  aspect-ratio: 3 / 4; /* mesma proporção que uma imagem de retrato */
-  border-radius: 10px;
+  aspect-ratio: 3 / 4; /* proporção semelhante à da foto */
   overflow: hidden;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
@@ -94,11 +94,9 @@ audio {
   display: block;
 }
 
-/* Legenda */
 .side-card figcaption {
   margin-top: 10px;
   font-style: italic;
   color: #555;
   font-size: 1em;
 }
-
