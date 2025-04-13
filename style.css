@@ -48,7 +48,7 @@ audio {
   width: 80%;
   margin-top: 10px;
 }
-.homework-model-container {
+.side-by-side-container {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -56,7 +56,7 @@ audio {
   margin-top: 30px;
 }
 
-.card {
+.side-card {
   background-color: #ffffff;
   border-radius: 15px;
   padding: 20px;
@@ -65,20 +65,37 @@ audio {
   text-align: center;
 }
 
-.card h3 {
+.side-card h3 {
   color: #000;
   margin-bottom: 15px;
   font-size: 1.5em;
 }
 
-.card img {
+/* Imagem */
+.side-card img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.card figcaption {
+/* Modelo 3D dentro de uma caixa proporcional */
+.x3d-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* mesma proporção que uma imagem de retrato */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.x3d-wrapper x3d {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Legenda */
+.side-card figcaption {
   margin-top: 10px;
   font-style: italic;
   color: #555;
